@@ -107,10 +107,7 @@ function splitArray (thisArray) {
  * @returns {number} the difference of the two parameters
  */
 function subtract(number1, number2) {
-  let num1=40;
-  let num2=53;
-  let total=num1-num2;
-  return total;
+  return number1-number2;
   // subtract number2 from number1, and return the result.
 }
 
@@ -120,6 +117,15 @@ function subtract(number1, number2) {
 // "I can only subtract numbers."
 
 function carefulSubtract (first, second) {
+  //let num3=40;
+  //let num4=53;
+  //let total2=num3-num4;
+
+  if (Number.isInteger(first) && Number.isInteger(second)) {
+    return first-second;
+  } else {
+    console.log('I can only subtract numbers');  
+  }
   // test to be sure that both first and second are numbers.
   // if so, return the result. Otherwise, return the string
   // "I can only subtract numbers."
