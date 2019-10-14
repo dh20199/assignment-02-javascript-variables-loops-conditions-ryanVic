@@ -121,10 +121,11 @@ function carefulSubtract (first, second) {
   //let num4=53;
   //let total2=num3-num4;
 
-  if (Number.isInteger(first) && Number.isInteger(second)) {
+  // if (Number.isInteger(first) && Number.isInteger(second)) {
+  if ( typeof first == 'number' && typeof second == 'number' ) {
     return first-second;
   } else {
-    console.log('I can only subtract numbers');  
+    return('I can only subtract numbers.');  
   }
   // test to be sure that both first and second are numbers.
   // if so, return the result. Otherwise, return the string
@@ -145,7 +146,8 @@ function carefulSubtract (first, second) {
  * @param {} unknown
  * @returns {} a meessage about unknown, or the square of unknown if it is a number
  */
-function typeTester (_unknown) {
+function typeTester (unknown) {
+  
   // use an if/else construction, a switch/case , or any other branching logic. Remember to
   // return a value. 
 }
