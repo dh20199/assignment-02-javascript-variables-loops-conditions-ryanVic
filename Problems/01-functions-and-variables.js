@@ -108,8 +108,9 @@ function splitArray (thisArray) {
  */
 function subtract(number1, number2) {
   let num1=40;
-  let num2=54;
-  return num1-num2;
+  let num2=53;
+  let total=num1-num2;
+  return total;
   // subtract number2 from number1, and return the result.
 }
 
