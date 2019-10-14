@@ -88,9 +88,8 @@ function returnArray (first, second, third) {
  * @returns {string} a sentence  composed from the first 3 elements of the array
  */
 function splitArray (thisArray) {
-  let thisArray = ['Tim', 'Horton', 'Donut'];
-  if (thisArray>2.9);
-  return array[0] + array[1] + 'was a' + array[2];
+  let THArray = ['Tim', 'Horton', 'Donut'];
+  return THArray[0] + ' ' + THArray[1] + ' was a ' + THArray[2] + '.';
   // remember you can access individual elements of an array with
   // array[0]
   // array[1]
@@ -107,7 +106,10 @@ function splitArray (thisArray) {
  * @param {number} number2
  * @returns {number} the difference of the two parameters
  */
-function subtract(_number1, _number2) {
+function subtract(number1, number2) {
+  let num1=40;
+  let num2=54;
+  return num1-num2;
   // subtract number2 from number1, and return the result.
 }
 
@@ -116,7 +118,7 @@ function subtract(_number1, _number2) {
 // sure that both parameters are numbers. If so, return the result. If not, return the string
 // "I can only subtract numbers."
 
-function carefulSubtract (_first, _second) {
+function carefulSubtract (first, second) {
   // test to be sure that both first and second are numbers.
   // if so, return the result. Otherwise, return the string
   // "I can only subtract numbers."
