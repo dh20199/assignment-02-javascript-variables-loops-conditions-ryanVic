@@ -31,6 +31,7 @@
  * @returns {string} should be exactly "Hello!"
  */
 function hello () {
+  return 'Hello!';
   // if you want you can declare a string variable first
   // or in this case you can just return the string directly
   // with something like "return 'Hello!'"
@@ -99,7 +100,7 @@ function splitArray (thisArray) {
  * @param {number} number2
  * @returns {number} the difference of the two parameters
  */
-function subtract(number1, number2) {
+function subtract(_number1, _number2) {
   // subtract number2 from number1, and return the result.
 }
 
@@ -108,7 +109,7 @@ function subtract(number1, number2) {
 // sure that both parameters are numbers. If so, return the result. If not, return the string
 // "I can only subtract numbers."
 
-function carefulSubtract (first, second) {
+function carefulSubtract (_first, _second) {
   // test to be sure that both first and second are numbers.
   // if so, return the result. Otherwise, return the string
   // "I can only subtract numbers."
@@ -128,7 +129,7 @@ function carefulSubtract (first, second) {
  * @param {} unknown
  * @returns {} a meessage about unknown, or the square of unknown if it is a number
  */
-function typeTester (unknown) {
+function typeTester (_unknown) {
   // use an if/else construction, a switch/case , or any other branching logic. Remember to
   // return a value. 
 }
