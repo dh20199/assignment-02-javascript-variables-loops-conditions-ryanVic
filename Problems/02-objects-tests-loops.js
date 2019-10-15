@@ -134,7 +134,8 @@ function wasWriter (obj) {
  * @returns {string}
  */
 function stringIterator (aString, aNumber) {
-  // for (var i = 0; i< ;i++);
+  //let aString=i;
+  //for (var i = 0; i<aNumber ;i++);
   // remember a basic "for" loop has this structure:
   // for (var i = 0; i< SOMETHING; i++) {...statements...  };
 }
@@ -205,10 +206,10 @@ function prettyIterator (aString, aNumber) {
  */
 function computeReign (pm) {
   var mike= {
-    fullName: 'Louis Riel',
-    party: 'Independant',
-    from: 1870,
-    to: 1871    };
+    fullName: 'Lester Pearson',
+    party: 'Liberal',
+    from: 1963,
+    to: 1968    };
   var N=mike.to-mike.from;
   return mike.fullName +'\'s reign was '+N+' years long.';
 
