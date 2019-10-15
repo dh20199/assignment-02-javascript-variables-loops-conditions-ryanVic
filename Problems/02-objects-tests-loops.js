@@ -134,6 +134,7 @@ function wasWriter (obj) {
  * @returns {string}
  */
 function stringIterator (aString, aNumber) {
+  // for (var i = 0; i< ;i++);
   // remember a basic "for" loop has this structure:
   // for (var i = 0; i< SOMETHING; i++) {...statements...  };
 }
@@ -203,6 +204,14 @@ function prettyIterator (aString, aNumber) {
  * @returns {string} 
  */
 function computeReign (pm) {
+  var mike= {
+    fullName: 'Louis Riel',
+    party: 'Independant',
+    from: 1870,
+    to: 1871    };
+  var N=mike.to-mike.from;
+  return mike.fullName +'\'s reign was '+N+' years long.';
+
   // declare a variable, setting it equal to the
   // length of reign. Now declare another variable,
   // and construct the desired sentence using the appropriate
