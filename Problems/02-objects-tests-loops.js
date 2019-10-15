@@ -133,7 +133,7 @@ function stringIterator (aString, aNumber) {
   let output='';
   for (var i = 0; i<aNumber; i++)
   {output=output+aString}
-    return output;
+  return output;
   // remember a basic "for" loop has this structure:
   // for (var i = 0; i< SOMETHING; i++) {...statements...  };
 }
@@ -168,7 +168,8 @@ function prettyIterator (aString, aNumber) {
     return output;
   // be sure to check your results on this one; it has a trick. maybe 2. 
 }
-
+let b= prettyIterator('work harder', 4)
+b
 
 
 // Problem 6
@@ -267,6 +268,10 @@ function computeReign (pm) {
  *  the properties of the individual objects comprising `list`
  */
 function sentences(list) {
+  for (var i = 0; i<list; i++);
+  let N=list.from-list.to;
+  return list.fullName +'\'s reign was '+N+' years long.\n';
+  
   // Hint: "ministers" is an ARRAY of OBJECTS. The simplest way to solve this problem
   // is to use the "for...of" loop syntax to loop through the array,
   // and the object[attribute] or object.attribute reference format to access
