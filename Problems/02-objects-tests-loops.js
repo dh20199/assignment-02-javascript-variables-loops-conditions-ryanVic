@@ -65,9 +65,9 @@ function returnObject (first, last, prof) {
  */
 function objectToSentence (obj) {
   //var object = {
-    //firstName: 'John',
-    //lastName: 'Hewitt',
-    //profession: 'Cooper'};
+  //firstName: 'John',
+  //lastName: 'Hewitt',
+  //profession: 'Cooper'};
   // remember you can refer to object properties using either of 2 methods
   // obj['propertyname']
   // or
@@ -163,12 +163,12 @@ a;
  */
 function prettyIterator (aString, aNumber) {
   let output='';
-  for (var i = 0; i<aNumber; i++)
+  for (var i = 1; i<aNumber+1; i++)
   {output=output+aString+'('+i+')\n'}
-    return output;
+  return output;
   // be sure to check your results on this one; it has a trick. maybe 2. 
 }
-let b= prettyIterator('work harder', 4)
+let b= prettyIterator('work harder', 2)
 b
 
 
@@ -210,6 +210,7 @@ b
  * @returns {string} 
  */
 function computeReign (pm) {
+  for (var i = 1; i<pm+1; i++);
   var N=pm.to-pm.from;
   return pm.fullName +'\'s reign was '+N+' years long.';
 
@@ -268,9 +269,12 @@ function computeReign (pm) {
  *  the properties of the individual objects comprising `list`
  */
 function sentences(list) {
-  for (var i = 0; i<list; i++);
-  let N=list.from-list.to;
-  return list.fullName +'\'s reign was '+N+' years long.\n';
+  var out = "";
+  for (var i = 0; i<list.length; i++){
+    let N=list[i].to-list[i].from;
+    out= out + list[i].fullName +'\'s reign was '+N+' years long.\n';
+  }
+  return out;
   
   // Hint: "ministers" is an ARRAY of OBJECTS. The simplest way to solve this problem
   // is to use the "for...of" loop syntax to loop through the array,
