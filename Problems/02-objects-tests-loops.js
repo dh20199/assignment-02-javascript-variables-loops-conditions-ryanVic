@@ -64,10 +64,10 @@ function returnObject (first, last, prof) {
  * @returns {string} a sentence constructed from the object parameters 
  */
 function objectToSentence (obj) {
-  var object = {
-    firstName: 'John',
-    lastName: 'Hewitt',
-    profession: 'Cooper'};
+  //var object = {
+    //firstName: 'John',
+    //lastName: 'Hewitt',
+    //profession: 'Cooper'};
   // remember you can refer to object properties using either of 2 methods
   // obj['propertyname']
   // or
@@ -105,12 +105,8 @@ function objectToSentence (obj) {
  * @returns {string} a sentence constructed from the object parameters
  */
 function wasWriter (obj) {
-  var object= {
-    firstName: 'Margaret',
-    lastName: 'Atwood',
-    profession: 'novelist'};
   if (obj.profession == 'novelist') {return obj.firstName+' '+obj.lastName+' was a writer.'}
-  else {return obj.firstName+' '+obj.lastName+' was not a writer.'}
+  else {return obj.firstName+' '+obj.lastName+' was not a writer.'};
   // in an if/else statement
   // it is acceptable to put the
   // "return" statement inside the conditional braces
@@ -134,11 +130,15 @@ function wasWriter (obj) {
  * @returns {string}
  */
 function stringIterator (aString, aNumber) {
-  //let aString=i;
-  //for (var i = 0; i<aNumber ;i++);
+  let output='';
+  for (var i = 0; i<aNumber; i++)
+  {output=output+aString}
+    return output;
   // remember a basic "for" loop has this structure:
   // for (var i = 0; i< SOMETHING; i++) {...statements...  };
 }
+let a  = stringIterator('o canada!', 5);
+a;
 
 
 // Problem 5
@@ -162,6 +162,10 @@ function stringIterator (aString, aNumber) {
  * @returns   {string}
  */
 function prettyIterator (aString, aNumber) {
+  let output='';
+  for (var i = 0; i<aNumber; i++)
+  {output=output+aString+'('+i+')\n'}
+    return output;
   // be sure to check your results on this one; it has a trick. maybe 2. 
 }
 
@@ -201,17 +205,12 @@ function prettyIterator (aString, aNumber) {
  * @param  {string} pm.fullName
  * @param {string} pm.party
  * @param {number} pm.from
- * @param {number} pm.toparty
+ * @param {number} pm.to
  * @returns {string} 
  */
 function computeReign (pm) {
-  var mike= {
-    fullName: 'Lester Pearson',
-    party: 'Liberal',
-    from: 1963,
-    to: 1968    };
-  var N=mike.to-mike.from;
-  return mike.fullName +'\'s reign was '+N+' years long.';
+  var N=pm.to-pm.from;
+  return pm.fullName +'\'s reign was '+N+' years long.';
 
   // declare a variable, setting it equal to the
   // length of reign. Now declare another variable,

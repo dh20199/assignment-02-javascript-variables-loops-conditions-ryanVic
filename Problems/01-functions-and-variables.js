@@ -47,7 +47,6 @@ function hello () {
  * @returns {string} a sentence that uses NAME i nits construction.
  */
 function greeting(name) {
-  var name = 'Ms. Atwood' ;
   return 'Hello, ' + name + '!';
   // use the '+' operator to combine
   // strings.  So for instance, if I wanted to
@@ -67,7 +66,7 @@ function greeting(name) {
  * @returns {array} 
  */
 function returnArray (first, second, third) {
-  var newarray= ['Tim', 'Horton', 'Donuts'];
+  var newarray= [first, second, third];
   return newarray;
   // you can define the array using "new Array ()" or just "[ , , ]"
   // don't forget to return it
@@ -88,8 +87,7 @@ function returnArray (first, second, third) {
  * @returns {string} a sentence  composed from the first 3 elements of the array
  */
 function splitArray (thisArray) {
-  let THArray = ['Tim', 'Horton', 'Donut'];
-  return THArray[0] + ' ' + THArray[1] + ' was a ' + THArray[2] + '.';
+  return thisArray[0] + ' ' + thisArray[1] + ' was a ' + thisArray[2] + '.';
   // remember you can access individual elements of an array with
   // array[0]
   // array[1]
@@ -150,7 +148,7 @@ function typeTester (unknown) {
   if (typeof unknown =='string') {return unknown + ' yay!'}
   else if (typeof unknown =='number') {return unknown*unknown}
   else if (typeof unknown =='undefined') {return 'Sorry, I can\'t do anything with an undefined value.'}
-  else {return 'I don\'t know how to use that kind of variable.'}
+  else {return 'I don\'t know how to use that kind of variable.'};
   
   // use an if/else construction, a switch/case , or any other branching logic. Remember to
   // return a value. 
