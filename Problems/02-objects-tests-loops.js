@@ -64,13 +64,17 @@ function returnObject (first, last, prof) {
  * @returns {string} a sentence constructed from the object parameters 
  */
 function objectToSentence (obj) {
+  var object = {
+    firstName: 'John',
+    lastName: 'Hewitt',
+    profession: 'Cooper'};
   // remember you can refer to object properties using either of 2 methods
   // obj['propertyname']
   // or
   // obj.propertyname
   // note the quotes in the first options
   // also note: you need to change this next line!!
-  return 'RETURNVALUE';
+  return obj.firstName+' '+obj.lastName+' was a '+obj.profession+'.';
 }
 
 
@@ -101,6 +105,12 @@ function objectToSentence (obj) {
  * @returns {string} a sentence constructed from the object parameters
  */
 function wasWriter (obj) {
+  var object= {
+    firstName: 'Margaret',
+    lastName: 'Atwood',
+    profession: 'novelist'};
+  if (obj.profession == 'novelist') {return obj.firstName+' '+obj.lastName+' was a writer.'}
+  else {return obj.firstName+' '+obj.lastName+' was not a writer.'}
   // in an if/else statement
   // it is acceptable to put the
   // "return" statement inside the conditional braces
