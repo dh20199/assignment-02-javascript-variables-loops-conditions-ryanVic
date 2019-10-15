@@ -147,6 +147,10 @@ function carefulSubtract (first, second) {
  * @returns {} a meessage about unknown, or the square of unknown if it is a number
  */
 function typeTester (unknown) {
+  if (typeof unknown =='string') {return unknown + ' yay!'}
+  else if (typeof unknown =='number') {return unknown*unknown}
+  else if (null) {return 'Sorry, I can\'t do anything with an undefined value.'}
+  else {return 'I don\'t know how to use that kind of variable.'}
   
   // use an if/else construction, a switch/case , or any other branching logic. Remember to
   // return a value. 
